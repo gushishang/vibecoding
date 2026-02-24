@@ -1,0 +1,30 @@
+:root { font-family: Inter, system-ui, sans-serif; }
+body { margin: 0; background: #f3f6fb; }
+.app-shell { min-height: 100vh; }
+.mt-8 { margin-top: 8px; }
+.mt-12 { margin-top: 12px; }
+.work-item { cursor: pointer; border-radius: 6px; display: flex; gap: 10px; align-items: center; padding: 6px 8px; }
+.work-item.active { background: #e6f4ff; }
+.thumb { border-radius: 6px; overflow: hidden; flex: 0 0 auto; }
+.item-content { min-width: 0; display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.work-item .title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+}
+.tag-line { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; min-height: 20px; }
+.hidden-input { display: none; }
+.debug {
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 8px;
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
